@@ -1,0 +1,128 @@
+/* Página principal del login */
+.login-page {
+  width: 100%;
+  height: 1024px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fondo con gradiente morado */
+.bg-gradient-purple,
+.bg-gradient-blue {
+  width: 720px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 720px;
+  overflow: hidden;
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(rgba(145, 129, 244, 1), rgba(80, 56, 237, 1));
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(rgba(13, 30, 43, 1), rgba(111, 166, 211, 1));
+}
+
+/* Tarjeta de fondo de login en estilo vidrio */
+.login-glass-card {
+  width: 612px;
+  height: 634px;
+  background: rgba(255, 255, 255, 0.21);
+  position: absolute;
+  top: 122px;
+  left: 698px;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  border-radius: 46px;
+  overflow: hidden;
+}
+
+/* Contenedor del formulario y título */
+.login-container {
+  width: 457px;
+  height: 396px;
+  background: url("/assets/images/v3_34.png") no-repeat center center / cover;
+  margin: 39px;
+  position: absolute;
+  top: 314px;
+  left: 120px;
+}
+
+/* Título del formulario */
+.login-title {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 273px;
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Campos del formulario */
+.form-group {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 440px;
+  height: 78px;
+  background: rgba(201, 226, 242, 0.4);
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+
+/* Contenedor del botón */
+.submit-container {
+  width: 457px;
+  height: 71px;
+  position: absolute;
+  left: 0;
+  margin-top: 15px;
+}
+
+/* Botón de login */
+.submit-button {
+  width: 457px;
+  height: 71px;
+  background: linear-gradient(rgba(30, 60, 87, 1), rgba(30, 60, 87, 1));
+  border-radius: 16px;
+  box-shadow: 0px 8px 21px rgba(0, 0, 0, 0.16);
+}
+
+/* Texto del botón */
+.submit-text {
+  width: 167px;
+  color: #fff;
+  position: absolute;
+  top: 11px;
+  left: 167px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+/* Imagen decorativa a la derecha */
+.login-image {
+  width: 707px;
+  height: 503px;
+  background: url("/assets/images/v3_26.png") no-repeat center center / cover;
+  position: absolute;
+  top: 195px;
+  left: 659px;
+}
+
+/* Nombre de la app */
+.app-name {
+  width: 303px;
+  color: #fff;
+  position: absolute;
+  top: 334px;
+  left: 687px;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+}

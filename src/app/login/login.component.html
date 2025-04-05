@@ -1,1 +1,36 @@
-<p>login works!</p>
+<!-- Contenedor principal de la página de inicio de sesión -->
+<div class="login-page">
+    <!-- Fondo con gradiente morado (parte izquierda del fondo decorativo) -->
+    <div class="bg-gradient-purple"></div>
+    <!-- Fondo con gradiente azul (parte derecha del fondo decorativo) -->
+    <div class="bg-gradient-blue"></div>
+    <!-- Tarjeta translúcida de fondo con efecto de vidrio -->
+    <div class="login-glass-card"></div>
+    <!-- Contenedor del formulario de login -->
+    <div class="login-container">
+        <!-- Título principal de la sección de inicio de sesión -->
+        <span class="login-title">Iniciar sesión</span>
+        <!-- Formulario de ingreso (vinculado con Angular Reactive Forms) -->
+        <form [formGroup]="inresoFrom" (ngSubmit)="login()">
+            <!-- Campo para el nombre de usuario -->
+            <div class="form-group">
+                <input type="text" formControlName="username" placeholder="User Name" class="form-control" />
+            </div>
+            <!-- Campo para la contraseña -->
+            <div class="form-group">
+                <input type="password" formControlName="password" placeholder="Password" class="form-control" />
+            </div>
+            <!-- Botón para enviar el formulario -->
+            <div class="submit-container">
+                <button type="submit" class="submit-button">
+                    <span class="submit-text">Ingresar</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- Imagen decorativa a la derecha del login -->
+    <div class="login-image"></div>
+    <!-- Nombre de la aplicación -->
+    <span class="app-name">Easy Inventory</span>
+
+</div>
