@@ -30,6 +30,7 @@
 .login-glass-card {
   width: 612px;
   height: 634px;
+  margin-left: 60px;
   background: rgba(255, 255, 255, 0.21);
   position: absolute;
   top: 122px;
@@ -111,7 +112,7 @@
   background: url("/assets/images/v3_26.png") no-repeat center center / cover;
   position: absolute;
   top: 195px;
-  left: 659px;
+  left: 700px;
 }
 
 /* Nombre de la app */
@@ -120,7 +121,7 @@
   color: #fff;
   position: absolute;
   top: 334px;
-  left: 687px;
+  left: 760px;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 48px;
