@@ -1,0 +1,60 @@
+.menu {
+    background: var(--color-2);
+    height: 100vh;
+    width: var(--menu-width-desktop);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu .logo {
+    padding: 2em 0.5em;
+    text-align: center;
+}
+
+.menu .logo img {
+    width: 100px;
+    overflow: hidden;
+}
+
+.menu .logo h2 {
+    font-size: medium;
+    margin-bottom: 0;
+    color: var(--color-4);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0.5em 0;
+    margin: 0;
+    color: var(--color-4);
+}
+
+.menu ul li {
+    padding: 0.5em 1em 0.5em 3em;
+    font-size: 0.95em;
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    background-size: auto 20px;
+    transition: all 0.15s linear;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.menu ul li:hover {
+    border-radius: 999px;
+    margin: 0.3rem 0.5rem;
+    padding: 0.6em 1.5em;
+    background-color: var(--color-4);
+    color: var(--color-2);
+    width: calc(100% - 1rem);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu ul li:focus {
+    outline: none;
+}

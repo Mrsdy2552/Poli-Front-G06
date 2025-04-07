@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-1: #ffea92;
+  --color-2: #0E1E2B;
+  --color-3: #dddddd;
+  --color-4: #ffffff;
+
+  --menu-width-desktop: 240px;
+  --menu-width-tablet: 90px;
+  --menu-width-smartphone: 230px;
+}
+
+body {
+  background: var(--color-1);
+  margin: 0;
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: var(--color-4);
+  padding-left: var(--menu-width-desktop);
+}
