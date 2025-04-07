@@ -1,1 +1,56 @@
-<p>agregar-modificar works!</p>
+
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="../../assets/images/v2011_339.png" alt="Logo">
+      <h5>Easy Inventory</h5>
+    </div>
+
+    <nav>
+
+      <ul class="menu">
+        <li><button class="active" routerLink="/inicio">Inicio</button></li>
+        <li><button routerLink="/agregar">Agregar producto</button></li>
+        <li><button routerLink="/actualizar">Actualizar producto</button></li>
+        <li><button routerLink="/eliminar">Eliminar producto</button></li>
+        <li><button routerLink="/"> <img src="../../assets/images/salir.png" alt="">Salir</button></li>
+      </ul>
+    </nav>
+    <button class="collapse-btn">&lt;</button>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <h1>Agregar Producto</h1>
+    <form class="product-form">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Nombre Producto</label>
+          <input type="text" placeholder="...">
+        </div>
+        <div class="form-group">
+          <label>Fecha de entrada</label>
+          <input type="date">
+        </div>
+        <div class="form-group">
+          <label>Precio Unitario</label>
+          <input type="number" placeholder="...">
+        </div>
+        <div class="form-group">
+          <label>Categoría</label>
+          <select>
+            <option>Categoría</option>
+            <option>Electrónica</option>
+            <option>Ropa</option>
+            <option>Alimentos</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label>Stock Total</label>
+          <input type="number" placeholder="...">
+        </div>
+      </div>
+      <button type="submit" class="btn">Agregar</button>
+    </form>
+  </main>
+</div>
