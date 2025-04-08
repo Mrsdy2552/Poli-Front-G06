@@ -1,58 +1,35 @@
-
 <div class="container">
-  <aside class="sidebar">
-    <div class="logo">
-      <img src="../../assets/images/v2011_339.png" alt="Logo">
-      <h5>Easy Inventory</h5>
-    </div>
-
-    <nav>
-
-      <ul class="menu">
-        <li><button class="active" routerLink="/inicio" routerLinkActive="active">Inicio</button></li>
-        <li><button routerLink="/agregar" routerLinkActive="active">Agregar producto</button></li>
-        <li><button routerLink="/actualizar" routerLinkActive="active">Actualizar producto</button></li>
-        <li><button routerLink="/eliminar" routerLinkActive="active">Eliminar producto</button></li>
-        <li><button routerLink="/" routerLinkActive="active"> <img src="../../assets/images/salir.png" alt="">Salir</button></li>
-      </ul>
-    </nav>
-    <button class="collapse-btn">&lt;</button>
-  </aside>
-
-  <!-- Main Content -->
-  <main class="main-content">
+  <div class="sidebar">
+  </div>
+  <div class="main">
     <h1>Agregar Producto</h1>
-    <form class="product-form">
+    <form (ngSubmit)="agregarProducto()" #productoForm="ngForm">
       <div class="form-grid">
-        <div class="form-group">
+        <div>
           <label>Nombre Producto</label>
-          <input type="text" placeholder="...">
+          <input type="text" name="nombre" [(ngModel)]="producto.nombre" required />
         </div>
-        <div class="form-group">
+        <div>
           <label>Fecha de entrada</label>
-          <input type="date">
+          <input type="date" name="fechaEntrada" [(ngModel)]="producto.fechaEntrada" required />
         </div>
-        <div class="form-group">
+        <div>
           <label>Precio Unitario</label>
-          <input type="number" placeholder="...">
+          <input type="number" name="precio" [(ngModel)]="producto.precioUnitario" required />
         </div>
-        <div class="form-group">
+        <div>
           <label>Categoría</label>
-          <select>
-            <option>Categoría</option>
-            <option>Electrónica</option>
-            <option>Ropa</option>
-            <option>Alimentos</option>
+          <select name="categoria" [(ngModel)]="producto.categoria" required>
+            <option disabled selected value="">Categoría</option>
+            <option *ngFor="let cat of categorias" [value]="cat">{{ cat }}</option>
           </select>
         </div>
-        <div class="form-group full">
+        <div class="full-width">
           <label>Stock Total</label>
-          <input type="number" placeholder="...">
+          <input type="number" name="stock" [(ngModel)]="producto.stockTotal" required />
         </div>
       </div>
-      <button type="submit" class="btn">Agregar</button>
+      <button type="submit">Agregar</button>
     </form>
-  </main>
+  </div>
 </div>
-
-
