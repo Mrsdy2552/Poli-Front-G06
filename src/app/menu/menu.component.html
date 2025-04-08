@@ -1,1 +1,13 @@
-<p>menu works!</p>
+<nav class="menu" tabindex="0">
+  <header class="logo">
+    <img src="assets\images\v2011_339.png" />
+    <h2>Easy inventory</h2>
+  </header>
+  <ul>
+    <li tabindex="0" [routerLink]="['/dashboard']" class="icon-dashboard"><i class="fa-solid fa-grip"></i><span> Inicio</span></li>
+    <li tabindex="0" [routerLink]="['/agregar']" class="icon-dashboard"><i class="fa-regular fa-circle"></i><span> Agregar Producto</span></li>
+    <li tabindex="0" [routerLink]="['/agregar']" class="icon-customers"><i class="fa-regular fa-circle"></i><span> Actualizar Producto</span></li>
+    <li tabindex="0" [routerLink]="['/eliminar']" class="icon-users"><i class="fa-regular fa-circle"></i><span> Eliminar un Producto</span></li>
+    <li tabindex="0" [routerLink]="['/login']" class="icon-settings"><i class="fa-solid fa-arrow-right-from-bracket"></i><span> Salir</span></li>
+  </ul>
+</nav>

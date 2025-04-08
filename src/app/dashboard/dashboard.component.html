@@ -1,8 +1,24 @@
 <app-menu> </app-menu>
-<div class="page-body-wrapper">
-    <div class="main-panel">
-        <div class="content-wrapper">
-            <router-outlet></router-outlet>
-        </div>
+
+<main class="cards-container">
+  <div class="card">
+    <div class="card-content">
+      <h2>Agregar</h2>
     </div>
-</div>
+    <button [routerLink]="['/agregar']" class="card-button">ir</button>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <h2>Actualizar</h2>
+    </div>
+    <button [routerLink]="['/agregar']" class="card-button">ir</button>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <h2>Eliminar</h2>
+    </div>
+    <button [routerLink]="['/eliminar']" class="card-button">ir</button>
+  </div>
+</main>
