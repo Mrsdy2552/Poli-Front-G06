@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction:row;
+
+}
+.sidebar {
+  width: 250px;
+  background-color: white;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+}
+.tabla {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  width: 80%;
+  height: 100vh;
+
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #1a1a2e;
+}
+
+.buscador {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+.buscador input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+}
+
+.buscador img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #f0f2f5;
+  color: #333;
+  font-weight: 600;
+}
+
+.btn-eliminar {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+  background-color: #004999;
+}
+
+.icon {
+  font-size: 1rem;
+}

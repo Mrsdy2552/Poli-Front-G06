@@ -1,2 +1,35 @@
-<app-menu> </app-menu>
-<p>agregar-modificar works!</p>
+<div class="container">
+  <div class="sidebar">
+  </div>
+  <div class="main">
+    <h1>Agregar Producto</h1>
+    <form (ngSubmit)="agregarProducto()" #productoForm="ngForm">
+      <div class="form-grid">
+        <div>
+          <label>Nombre Producto</label>
+          <input type="text" name="nombre" [(ngModel)]="producto.nombre" required />
+        </div>
+        <div>
+          <label>Fecha de entrada</label>
+          <input type="date" name="fechaEntrada" [(ngModel)]="producto.fechaEntrada" required />
+        </div>
+        <div>
+          <label>Precio Unitario</label>
+          <input type="number" name="precio" [(ngModel)]="producto.precioUnitario" required />
+        </div>
+        <div>
+          <label>Categoría</label>
+          <select name="categoria" [(ngModel)]="producto.categoria" required>
+            <option disabled selected value="">Categoría</option>
+            <option *ngFor="let cat of categorias" [value]="cat">{{ cat }}</option>
+          </select>
+        </div>
+        <div class="full-width">
+          <label>Stock Total</label>
+          <input type="number" name="stock" [(ngModel)]="producto.stockTotal" required />
+        </div>
+      </div>
+      <button type="submit">Agregar</button>
+    </form>
+  </div>
+</div>
