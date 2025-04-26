@@ -5,7 +5,6 @@ import { dashboardRoutes } from './dashboard/dashboard.routes';
 import { AgregarModificarComponent } from './agregar-modificar/agregar-modificar.component';
 import { eliminarComponent } from './eliminar/eliminar.component';
 
-
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent, children: dashboardRoutes },
