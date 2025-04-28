@@ -1,37 +1,39 @@
+<app-menu> </app-menu>
+
 <div class="container">
   <div class="sidebar"></div>
   <div class="tabla">
-  <h2>Eliminar</h2>
-  <div class="buscador">
-    <input type="text" placeholder="Buscar" [(ngModel)]="filtro" (input)="filtrarProductos()" />
-    <img src="../../assets/images/search.svg" alt="Buscar" />
-  </div>
+    <h2>Eliminar</h2>
+    <div class="buscador">
+      <input type="text" placeholder="Buscar" [(ngModel)]="filtro" (input)="filtrarProductos()" />
+      <img src="../../assets/images/search.svg" alt="Buscar" />
+    </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Nombre Del Producto</th>
-        <th>Categoría</th>
-        <th>Stock Total</th>
-        <th>Fecha de entrada</th>
-        <th>Eliminar</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let producto of productosFiltrados; let i = index">
-        <td>{{ i + 1 }}</td>
-        <td>{{ producto.nombre }}</td>
-        <td>{{ producto.categoria }}</td>
-        <td>{{ producto.stock }}</td>
-        <td>{{ producto.fecha }}</td>
-        <td>
-          <button class="btn-eliminar" (click)="eliminarProducto(i)">
-            Eliminar <span class="icon">✖</span>
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nombre Del Producto</th>
+          <th>Categoría</th>
+          <th>Stock Total</th>
+          <th>Fecha de entrada</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let producto of productosFiltrados; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ producto.nombre }}</td>
+          <td>{{ producto.categoria }}</td>
+          <td>{{ producto.stock }}</td>
+          <td>{{ producto.fecha }}</td>
+          <td>
+            <button class="btn-eliminar" (click)="eliminarProducto(i)">
+              Eliminar <span class="icon">✖</span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

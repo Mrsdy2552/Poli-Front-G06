@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from "../menu/menu.component";
 
 @Component({
   selector: 'app-agregar-modificar',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, MenuComponent],
   templateUrl: './agregar-modificar.component.html',
   styleUrl: './agregar-modificar.component.css'
 })
